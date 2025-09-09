@@ -1,161 +1,116 @@
 <!doctype html>
 <html lang="nl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Inzamelactie 4A-ZWA Wafels & Warme Chocomelk</title>
-  <meta name="description" content="Inzamelactie georganiseerd door klas 4A-ZWA voor de vader van Lily: verkoop van wafels & warme chocomelk." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Wafels & Warme Chocomelk — Steun ADPKD Leuven & transplantpatiënten</title>
+  <meta name="description" content="Inzamelactie georganiseerd door ADPKD Leuven en klas 4A-ZWA: verkoop van wafels & warme chocomelk ten voordele van mensen die een transplantatie nodig hebben.">
+  <meta name="theme-color" content="#fff7ed">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='100%25' height='100%25' rx='12' fill='%23fff7ed'/%3E%3Cg transform='translate(8 6)'%3E%3Ccircle cx='18' cy='18' r='14' fill='%23b45309'/%3E%3Crect x='2' y='28' width='32' height='6' rx='2' fill='%23fef3c7'/%3E%3C/g%3E%3C/svg%3E">
   <style>
-    :root{
-      --bg:#f9fafb;--card:#ffffff;--muted:#6b7280;--accent:#b45309;--accent-light:#fef3c7;
-      --radius:16px;--shadow:0 8px 28px rgba(15,23,42,.08);
-      font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{background:var(--bg);color:#0f172a;line-height:1.6}
-    .container{max-width:1080px;margin:0 auto;padding:24px}
-
-    header.hero{
-      background:linear-gradient(135deg,#fff7ed,#fffbeb);
-      border-radius:var(--radius);
-      padding:36px;
-      box-shadow:var(--shadow);
-      text-align:center;
-      margin-bottom:32px;
-    }
-    header.hero img{width:96px;height:96px;border-radius:50%;box-shadow:var(--shadow);margin-bottom:16px;}
-    header.hero h1{font-size:28px;margin-bottom:8px}
-    header.hero p{color:var(--muted)}
-
-    .grid{display:grid;grid-template-columns:2fr 1fr;gap:24px}
-    @media(max-width:900px){.grid{grid-template-columns:1fr}}
-
-    .card{background:var(--card);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
-    .card h2,.card h3{margin-bottom:12px}
-    .card p{margin-bottom:16px}
-
-    .event-info{
-      background:var(--accent-light);
-      border-left:6px solid var(--accent);
-      padding:16px;
-      border-radius:var(--radius);
-      margin-bottom:20px;
-    }
-
-    .steps{list-style:none;padding:0;margin:0}
-    .steps li{position:relative;padding-left:28px;margin-bottom:14px}
-    .steps li::before{content:"✔";position:absolute;left:0;top:0;color:var(--accent);font-weight:bold}
-
-    .cta-buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
-    .btn{background:var(--accent);color:#fff;padding:10px 18px;border-radius:var(--radius);text-decoration:none;font-weight:500;box-shadow:var(--shadow);transition:.2s}
-    .btn:hover{background:#92400e}
-
-    form.order-form{display:flex;flex-direction:column;gap:12px;margin-top:16px}
-    form.order-form label{font-weight:500}
-    form.order-form input,form.order-form select{
-      padding:8px;border:1px solid #d1d5db;border-radius:var(--radius);
-    }
-    form.order-form button{
-      background:var(--accent);color:#fff;padding:10px 18px;border:none;border-radius:var(--radius);
-      font-weight:500;cursor:pointer;box-shadow:var(--shadow);transition:.2s;
-    }
-    form.order-form button:hover{background:#92400e}
-
-    footer{text-align:center;margin-top:40px;font-size:13px;color:var(--muted)}
+    :root{--bg:#f8fafb;--card:#fff;--muted:#6b7280;--accent:#b45309;--accent-2:#92400e;--accent-light:#fffbeb;--radius:14px;--shadow:0 6px 22px rgba(15,23,42,.08);--max:1100px;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial}
+    *{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,var(--bg),#fff);color:#0f172a;-webkit-font-smoothing:antialiased}h1,h2,h3{margin:0}
+    .container{max-width:var(--max);margin:28px auto;padding:20px}
+    header.hero{display:flex;gap:18px;align-items:center;padding:18px;border-radius:18px;background:linear-gradient(135deg,#fff7ed,#fff3db);box-shadow:var(--shadow)}
+    .brand{display:flex;gap:14px;align-items:center}.logo{width:86px;height:86px;flex:0 0 86px;border-radius:16px;background:linear-gradient(135deg,#fff9f2,#fff0d9);display:grid;place-items:center;box-shadow:0 6px 22px rgba(180,83,9,.12)}.logo svg{width:64px;height:64px}
+    h1{font-size:20px}p.lead{color:var(--muted);margin-top:4px}
+    .grid{display:grid;grid-template-columns:2fr 1fr;gap:20px;margin-top:18px}@media(max-width:920px){.grid{grid-template-columns:1fr}}
+    .card{background:var(--card);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+    .event-info{background:linear-gradient(90deg,var(--accent-light),#fffef2);border-left:6px solid var(--accent);padding:14px;border-radius:10px;margin:12px 0}
+    .steps{list-style:none;padding:0;margin:0}.steps li{position:relative;padding-left:28px;margin-bottom:12px}.steps li::before{content:'✓';position:absolute;left:0;top:0;color:var(--accent);font-weight:700}
+    .cta-buttons{display:flex;gap:12px;flex-wrap:wrap}.btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:12px;font-weight:600;text-decoration:none;cursor:pointer;border:none;display:inline-block}.btn:hover{background:var(--accent-2)}.btn.secondary{background:transparent;color:var(--accent);border:1px solid rgba(180,83,9,.12)}
+    form.order-form{display:grid;gap:12px}.order-form label{font-weight:600;font-size:14px}input,select{padding:10px;border:1px solid #e6e7eb;border-radius:10px;width:100%}form.order-form button{background:var(--accent);color:#fff;padding:10px 14px;border:none;border-radius:12px;font-weight:600;cursor:pointer;box-shadow:var(--shadow)}form.order-form button:hover{background:var(--accent-2)}
+    aside .card+ .card{margin-top:16px}.contact a{color:var(--accent);text-decoration:none}
+    footer{margin-top:22px;text-align:center;color:var(--muted);font-size:13px}
+    .modal{position:fixed;inset:0;display:none;place-items:center;background:rgba(2,6,23,.44);z-index:60}.modal.open{display:grid}.modal .dialog{width:min(500px,94%);background:var(--card);padding:20px;border-radius:12px;box-shadow:var(--shadow)}
   </style>
 </head>
 <body>
   <div class="container">
     <header class="hero">
-      <img src="https://ibb.co/HL4k74XC" alt="Logo actie" />
-      <h1>Wafels & Warme Chocomelk Steun Lily's papa</h1>
-      <p>Georganiseerd door klas 4A-ZWA</p>
+      <div class="brand">
+        <div class="logo">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" rx="12" fill="url(#g)"/><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#fff7ed"/><stop offset="1" stop-color="#fff3db"/></linearGradient></defs><g transform="translate(8,6)"><circle cx="18" cy="18" r="14" fill="#b45309"/><rect x="2" y="28" width="32" height="6" rx="2" fill="#fef3c7"/></g></svg>
+        </div>
+        <div>
+          <h1>Wafels & Warme Chocomelk Steun ADPKD Leuven & transplantpatiënten</h1>
+          <p class="lead">In samenwerking met <strong>ADPKD Leuven</strong> en klas <strong>4A-ZWA</strong></p>
+        </div>
+      </div>
+      <div style="margin-left:auto;display:flex;gap:10px">
+        <button class="btn" id="open-order">Bestel vooraf</button>
+        <a class="btn secondary" href="#info">Praktische info</a>
+      </div>
     </header>
 
     <div class="grid">
       <main>
-        <div class="card">
+        <section class="card">
           <h2>Waarom deze actie?</h2>
-          <p>Lily’s vader ondergaat nierdialyse en wacht op een niertransplantatie. Ondanks tussenkomst van de ziekenkas blijven er veel kosten over. Daarom zet klas <strong>4A-ZWA</strong> een warme inzamelactie op met heerlijke wafels en dampende chocomelk.</p>
-
-          <div class="event-info">
+          <p>Deze inzamelactie ondersteunt <strong>ADPKD Leuven</strong> en alle patiënten die wachten op een orgaantransplantatie. De opbrengst helpt de kosten te verlichten die niet volledig door de ziekenkas word gedekt.</p>
+          <div class="event-info" id="info">
             <h3>Praktische info</h3>
-            <p><strong>Datum:</strong> Datum 2025/2026</p>
-            <p><strong>Locatie:</strong> speelplaats Sint Maria Keuken A-block</p>
+            <p><strong>Datum:</strong> Schooljaar 2025/2026</p>
+            <p><strong>Locatie:</strong> Speelplaats Sint Maria Keuken A-block</p>
             <p><strong>Prijs:</strong> €1,50 per wafel, €2 per beker chocomelk</p>
           </div>
-
           <h3>Hoe verloopt de actie?</h3>
           <ul class="steps">
-            <li>We vragen toestemming en plannen de datum.</li>
-            <li>We maken affiches en verspreiden ze op school en online.</li>
-            <li>We zorgen voor tafels, decoratie en prijslijsten.</li>
-            <li>We kopen ingrediënten voor de wafels & chocomelk.</li>
-            <li>We bouwen de stand op en kleden ze gezellig aan.</li>
-            <li>Tijdens de pauzes verkopen we en zamelen we geld in.</li>
-            <li>Na afloop ruimen we netjes op en tellen we de opbrengst.</li>
+            <li>Toestemming vragen en datum vastleggen</li>
+            <li>Affiches maken en verspreiden</li>
+            <li>Tafels en decoratie voorzien</li>
+            <li>Ingrediënten kopen</li>
+            <li>Stand opbouwen en aankleden</li>
+            <li>Tijdens de pauzes verkopen</li>
+            <li>Opkuisen en opbrengst tellen</li>
           </ul>
-
           <div class="cta-buttons">
-            <a href="#bestel" class="btn">Bestel vooraf</a>
+            <button class="btn" id="open-order2">Bestel vooraf</button>
           </div>
-        </div>
-
-        <div class="card" id="bestel">
-          <h2>Bestelformulier</h2>
-          <form action="https://formspree.io/f/xrbajbag" method="POST" class="order-form">
-            <label for="naam">Naam:</label>
-            <input type="text" id="naam" name="Naam" required>
-
-            <label for="klas">Klas:</label>
-            <input type="text" id="klas" name="Klas" required>
-
-            <label for="bestelling">Wat bestellen:</label>
-            <select id="bestelling" name="Bestelling" required>
-              <option value="Chocomelk">Chocomelk</option>
-              <option value="Wafel">Wafel</option>
-              <option value="Chocomelk en Wafel">Chocomelk en Wafel</option>
-            </select>
-
-            <label><input type="checkbox" name="Slagroom" value="ja"> Slagroom (+€0,50)</label>
-
-            <label for="aantal">Hoeveelheid:</label>
-            <select id="aantal" name="Aantal" required>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-            </select>
-
-            <button type="submit">Verstuur bestelling</button>
-          </form>
-        </div>
+        </section>
       </main>
-
       <aside>
         <div class="card">
           <h3>Extra info</h3>
-          <p class="small">De vader van Lily bevindt zich in de testfase voorafgaand aan de transplantatie. Tot nu toe zijn de resultaten positief en het traject loopt verder.</p>
+          <p>De opbrengst gaat volledig naar ADPKD de ondersteuning van transplantpatiënten.</p>
         </div>
-
-        <div class="card">
+        <div class="card contact">
           <h3>Contact</h3>
-          <p class="small">Organisator: klas 4A-ZWA<br />
-          E-mail: <a href="mailto:tristan.vansonhoven@leerling.kogeka.be">tristan.vansonhoven@leerling.kogeka.be</a></p>
-          E-mail: <a href="mailto:sterre.vanlommel@kogeka.be">sterre.vanlommel@kogeka.be</a></p>
+          <p>Klas 4A-ZWA<br>
+          <a href="mailto:tristan.vansonhoven@leerling.kogeka.be">tristan.vansonhoven@leerling.kogeka.be</a><br>
+          <a href="mailto:sterre.vanlommel@kogeka.be">sterre.vanlommel@kogeka.be</a></p>
         </div>
       </aside>
     </div>
-
-    <footer>
-      Pagina gemaakt door Tristan Vansonhoven voor hun inzamelactie
-    </footer>
+    <footer>Pagina gemaakt door Tristan Vansonhoven in samenwerking met ADPKD Leuven en klas 4A-ZWA</footer>
   </div>
+
+  <div class="modal" id="orderModal">
+    <div class="dialog">
+      <h2>Bestelformulier</h2>
+      <form action="https://formspree.io/f/xrbajbag" method="POST" class="order-form">
+        <label for="naam">Naam:</label>
+        <input type="text" id="naam" name="Naam" required>
+        <label for="klas">Klas:</label>
+        <input type="text" id="klas" name="Klas" required>
+        <label for="bestelling">Wat bestellen:</label>
+        <select id="bestelling" name="Bestelling" required>
+          <option value="Chocomelk">Chocomelk</option>
+          <option value="Wafel">Wafel</option>
+          <option value="Chocomelk en Wafel">Chocomelk en Wafel</option>
+        </select>
+        <label><input type="checkbox" name="Slagroom" value="ja"> Slagroom (+€0,50)</label>
+        <label for="aantal">Hoeveelheid:</label>
+        <select id="aantal" name="Aantal" required>
+          <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+        </select>
+        <button type="submit">Verstuur bestelling</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const modal=document.getElementById('orderModal');const btns=[document.getElementById('open-order'),document.getElementById('open-order2')];btns.forEach(b=>b.addEventListener('click',()=>{modal.classList.add('open')}));modal.addEventListener('click',e=>{if(e.target===modal){modal.classList.remove('open')}})
+  </script>
 </body>
 </html>
