@@ -4,42 +4,38 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Wafels & Warme Chocomelk — Steun ADPKD Leuven & transplantpatiënten</title>
-  <meta name="description" content="Inzamelactie georganiseerd door ADPKD Leuven en klas 4A-ZWA: verkoop van wafels & warme chocomelk ten voordele van mensen die een transplantatie nodig hebben.">
+  <meta name="description" content="Inzamelactie van klas 4A-ZWA en ADPKD Leuven: verkoop van wafels en warme chocomelk ten voordele van mensen die een transplantatie nodig hebben.">
   <meta name="theme-color" content="#fff7ed">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='100%25' height='100%25' rx='12' fill='%23fff7ed'/%3E%3Cg transform='translate(8 6)'%3E%3Ccircle cx='18' cy='18' r='14' fill='%23b45309'/%3E%3Crect x='2' y='28' width='32' height='6' rx='2' fill='%23fef3c7'/%3E%3C/g%3E%3C/svg%3E">
   <style>
-    :root{--bg:#f8fafb;--card:#fff;--muted:#6b7280;--accent:#b45309;--accent-2:#92400e;--accent-light:#fffbeb;--radius:14px;--shadow:0 6px 22px rgba(15,23,42,.08);--max:1100px;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial}
-    *{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,var(--bg),#fff);color:#0f172a;-webkit-font-smoothing:antialiased}h1,h2,h3{margin:0}
+    :root{--bg:#f8fafb;--card:#fff;--muted:#6b7280;--accent:#b45309;--accent-hover:#92400e;--accent-light:#fffbeb;--radius:16px;--shadow:0 6px 22px rgba(15,23,42,.08);--max:1100px;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial}
+    *{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,var(--bg),#fff);color:#0f172a;line-height:1.6}
     .container{max-width:var(--max);margin:28px auto;padding:20px}
-    header.hero{display:flex;gap:18px;align-items:center;padding:18px;border-radius:18px;background:linear-gradient(135deg,#fff7ed,#fff3db);box-shadow:var(--shadow)}
-    .brand{display:flex;gap:14px;align-items:center}.logo{width:86px;height:86px;flex:0 0 86px;border-radius:16px;background:linear-gradient(135deg,#fff9f2,#fff0d9);display:grid;place-items:center;box-shadow:0 6px 22px rgba(180,83,9,.12)}.logo svg{width:64px;height:64px}
-    h1{font-size:20px}p.lead{color:var(--muted);margin-top:4px}
-    .grid{display:grid;grid-template-columns:2fr 1fr;gap:20px;margin-top:18px}@media(max-width:920px){.grid{grid-template-columns:1fr}}
-    .card{background:var(--card);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
-    .event-info{background:linear-gradient(90deg,var(--accent-light),#fffef2);border-left:6px solid var(--accent);padding:14px;border-radius:10px;margin:12px 0}
-    .steps{list-style:none;padding:0;margin:0}.steps li{position:relative;padding-left:28px;margin-bottom:12px}.steps li::before{content:'✓';position:absolute;left:0;top:0;color:var(--accent);font-weight:700}
-    .cta-buttons{display:flex;gap:12px;flex-wrap:wrap}.btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:12px;font-weight:600;text-decoration:none;cursor:pointer;border:none;display:inline-block}.btn:hover{background:var(--accent-2)}.btn.secondary{background:transparent;color:var(--accent);border:1px solid rgba(180,83,9,.12)}
-    form.order-form{display:grid;gap:12px}.order-form label{font-weight:600;font-size:14px}input,select{padding:10px;border:1px solid #e6e7eb;border-radius:10px;width:100%}form.order-form button{background:var(--accent);color:#fff;padding:10px 14px;border:none;border-radius:12px;font-weight:600;cursor:pointer;box-shadow:var(--shadow)}form.order-form button:hover{background:var(--accent-2)}
+    header.hero{display:flex;flex-wrap:wrap;align-items:center;gap:20px;padding:24px;border-radius:var(--radius);background:linear-gradient(135deg,#fff7ed,#fff3db);box-shadow:var(--shadow)}
+    .logo{width:86px;height:86px;border-radius:16px;background:linear-gradient(135deg,#fff9f2,#fff0d9);display:grid;place-items:center;box-shadow:0 6px 22px rgba(180,83,9,.12)}
+    .logo svg{width:64px;height:64px}
+    .brand h1{font-size:24px;margin:0}.brand p{color:var(--muted);margin:4px 0 0}
+    .grid{display:grid;grid-template-columns:2fr 1fr;gap:20px;margin-top:24px}@media(max-width:920px){.grid{grid-template-columns:1fr}}
+    .card{background:var(--card);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+    .event-info{background:linear-gradient(90deg,var(--accent-light),#fffef2);border-left:6px solid var(--accent);padding:16px;border-radius:12px;margin:16px 0}
+    .btn{background:var(--accent);color:#fff;padding:12px 20px;border-radius:12px;font-weight:600;text-decoration:none;cursor:pointer;border:none;display:inline-block;transition:.2s}.btn:hover{background:var(--accent-hover)}
     aside .card+ .card{margin-top:16px}.contact a{color:var(--accent);text-decoration:none}
-    footer{margin-top:22px;text-align:center;color:var(--muted);font-size:13px}
-    .modal{position:fixed;inset:0;display:none;place-items:center;background:rgba(2,6,23,.44);z-index:60}.modal.open{display:grid}.modal .dialog{width:min(500px,94%);background:var(--card);padding:20px;border-radius:12px;box-shadow:var(--shadow)}
+    form.order-form{display:flex;flex-direction:column;gap:12px;margin-top:12px}
+    form.order-form input,form.order-form select{padding:10px;border:1px solid #d1d5db;border-radius:12px;font-size:15px}
+    form.order-form label{font-weight:500}
+    form.order-form .total{margin-top:10px;font-weight:600}
+    footer{margin-top:32px;text-align:center;color:var(--muted);font-size:14px}
   </style>
 </head>
 <body>
   <div class="container">
     <header class="hero">
-      <div class="brand">
-        <div class="logo">
-          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" rx="12" fill="url(#g)"/><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#fff7ed"/><stop offset="1" stop-color="#fff3db"/></linearGradient></defs><g transform="translate(8,6)"><circle cx="18" cy="18" r="14" fill="#b45309"/><rect x="2" y="28" width="32" height="6" rx="2" fill="#fef3c7"/></g></svg>
-        </div>
-        <div>
-          <h1>Wafels & Warme Chocomelk Steun ADPKD Leuven & transplantpatiënten</h1>
-          <p class="lead">In samenwerking met <strong>ADPKD Leuven</strong> en klas <strong>4A-ZWA</strong></p>
-        </div>
+      <div class="logo">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" rx="12" fill="url(#g)"/><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#fff7ed"/><stop offset="1" stop-color="#fff3db"/></linearGradient></defs><g transform="translate(8,6)"><circle cx="18" cy="18" r="14" fill="#b45309"/><rect x="2" y="28" width="32" height="6" rx="2" fill="#fef3c7"/></g></svg>
       </div>
-      <div style="margin-left:auto;display:flex;gap:10px">
-        <button class="btn" id="open-order">Bestel vooraf</button>
-        <a class="btn secondary" href="#info">Praktische info</a>
+      <div class="brand">
+        <h1>Wafels & Warme Chocomelk — Steun ADPKD Leuven & transplantpatiënten</h1>
+        <p>Georganiseerd door klas 4A-ZWA in samenwerking met ADPKD Leuven</p>
       </div>
     </header>
 
@@ -47,70 +43,78 @@
       <main>
         <section class="card">
           <h2>Waarom deze actie?</h2>
-          <p>Deze inzamelactie ondersteunt <strong>ADPKD Leuven</strong> en alle patiënten die wachten op een orgaantransplantatie. De opbrengst helpt de kosten te verlichten die niet volledig door de ziekenkas word gedekt.</p>
+          <p>Deze verkoop ondersteunt <strong>ADPKD Leuven</strong> en alle mensen die wachten op een orgaantransplantatie. Met elke wafel en beker chocomelk help je de extra kosten verlichten die niet volledig door de ziekenkas worden gedekt.</p>
           <div class="event-info" id="info">
             <h3>Praktische info</h3>
             <p><strong>Datum:</strong> Schooljaar 2025/2026</p>
             <p><strong>Locatie:</strong> Speelplaats Sint Maria Keuken A-block</p>
-            <p><strong>Prijs:</strong> €1,50 per wafel, €2 per beker chocomelk</p>
+            <p><strong>Prijs:</strong> €1,50 per wafel, €2 per beker chocomelk, +€0,50 voor slagroom</p>
           </div>
-          <h3>Hoe verloopt de actie?</h3>
-          <ul class="steps">
-            <li>Toestemming vragen en datum vastleggen</li>
-            <li>Affiches maken en verspreiden</li>
-            <li>Tafels en decoratie voorzien</li>
-            <li>Ingrediënten kopen</li>
-            <li>Stand opbouwen en aankleden</li>
-            <li>Tijdens de pauzes verkopen</li>
-            <li>Opkuisen en opbrengst tellen</li>
-          </ul>
-          <div class="cta-buttons">
-            <button class="btn" id="open-order2">Bestel vooraf</button>
-          </div>
+          <a href="#bestel" class="btn">Bestel vooraf</a>
+        </section>
+
+        <section class="card" id="bestel">
+          <h2>Bestelformulier</h2>
+          <form action="https://formspree.io/f/xrbajbag" method="POST" class="order-form" id="orderForm">
+            <label for="naam">Naam</label>
+            <input type="text" id="naam" name="Naam" required>
+            <label for="klas">Klas</label>
+            <input type="text" id="klas" name="Klas" required>
+            <label for="bestelling">Wat bestellen</label>
+            <select id="bestelling" name="Bestelling" required>
+              <option value="Chocomelk">Chocomelk (€2)</option>
+              <option value="Wafel">Wafel (€1,50)</option>
+              <option value="Chocomelk en Wafel">Chocomelk en Wafel (€3,50)</option>
+            </select>
+            <label><input type="checkbox" id="slagroom" name="Slagroom" value="ja"> Slagroom (+€0,50)</label>
+            <label for="aantal">Hoeveelheid</label>
+            <select id="aantal" name="Aantal" required>
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            </select>
+            <div class="total" id="totaal">Totaal: €0,00</div>
+            <button type="submit" class="btn">Verstuur bestelling</button>
+          </form>
         </section>
       </main>
+
       <aside>
         <div class="card">
           <h3>Extra info</h3>
-          <p>De opbrengst gaat volledig naar ADPKD de ondersteuning van transplantpatiënten.</p>
+          <p>De opbrengst gaat volledig naar ADPKD Leuven en de ondersteuning van transplantpatiënten.</p>
         </div>
         <div class="card contact">
           <h3>Contact</h3>
           <p>Klas 4A-ZWA<br>
-          <a href="mailto:tristan.vansonhoven@leerling.kogeka.be">tristan.vansonhoven@leerling.kogeka.be</a><br>
-          <a href="mailto:sterre.vanlommel@kogeka.be">sterre.vanlommel@kogeka.be</a></p>
+            <a href="mailto:tristan.vansonhoven@leerling.kogeka.be">tristan.vansonhoven@leerling.kogeka.be</a><br>
+            <a href="mailto:sterre.vanlommel@kogeka.be">sterre.vanlommel@kogeka.be</a>
+          </p>
         </div>
       </aside>
     </div>
+
     <footer>Pagina gemaakt door Tristan Vansonhoven in samenwerking met ADPKD Leuven en klas 4A-ZWA</footer>
   </div>
 
-  <div class="modal" id="orderModal">
-    <div class="dialog">
-      <h2>Bestelformulier</h2>
-      <form action="https://formspree.io/f/xrbajbag" method="POST" class="order-form">
-        <label for="naam">Naam:</label>
-        <input type="text" id="naam" name="Naam" required>
-        <label for="klas">Klas:</label>
-        <input type="text" id="klas" name="Klas" required>
-        <label for="bestelling">Wat bestellen:</label>
-        <select id="bestelling" name="Bestelling" required>
-          <option value="Chocomelk">Chocomelk</option>
-          <option value="Wafel">Wafel</option>
-          <option value="Chocomelk en Wafel">Chocomelk en Wafel</option>
-        </select>
-        <label><input type="checkbox" name="Slagroom" value="ja"> Slagroom (+€0,50)</label>
-        <label for="aantal">Hoeveelheid:</label>
-        <select id="aantal" name="Aantal" required>
-          <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
-        </select>
-        <button type="submit">Verstuur bestelling</button>
-      </form>
-    </div>
-  </div>
-
   <script>
-    const modal=document.getElementById('orderModal');const btns=[document.getElementById('open-order'),document.getElementById('open-order2')];btns.forEach(b=>b.addEventListener('click',()=>{modal.classList.add('open')}));modal.addEventListener('click',e=>{if(e.target===modal){modal.classList.remove('open')}})
+    const bestelling=document.getElementById("bestelling");
+    const slagroom=document.getElementById("slagroom");
+    const aantal=document.getElementById("aantal");
+    const totaal=document.getElementById("totaal");
+
+    function berekenTotaal(){
+      let prijs=0;
+      if(bestelling.value==="Chocomelk") prijs=2;
+      if(bestelling.value==="Wafel") prijs=1.5;
+      if(bestelling.value==="Chocomelk en Wafel") prijs=3.5;
+      if(slagroom.checked) prijs+=0.5;
+      const totaalPrijs=prijs*parseInt(aantal.value);
+      totaal.textContent="Totaal: €"+totaalPrijs.toFixed(2).replace(".",",");
+    }
+
+    bestelling.addEventListener("change",berekenTotaal);
+    slagroom.addEventListener("change",berekenTotaal);
+    aantal.addEventListener("change",berekenTotaal);
+    document.addEventListener("DOMContentLoaded",berekenTotaal);
   </script>
 </body>
 </html>
