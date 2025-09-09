@@ -50,6 +50,17 @@
     .btn{background:var(--accent);color:#fff;padding:10px 18px;border-radius:var(--radius);text-decoration:none;font-weight:500;box-shadow:var(--shadow);transition:.2s}
     .btn:hover{background:#92400e}
 
+    form.order-form{display:flex;flex-direction:column;gap:12px;margin-top:16px}
+    form.order-form label{font-weight:500}
+    form.order-form input,form.order-form select{
+      padding:8px;border:1px solid #d1d5db;border-radius:var(--radius);
+    }
+    form.order-form button{
+      background:var(--accent);color:#fff;padding:10px 18px;border:none;border-radius:var(--radius);
+      font-weight:500;cursor:pointer;box-shadow:var(--shadow);transition:.2s;
+    }
+    form.order-form button:hover{background:#92400e}
+
     footer{text-align:center;margin-top:40px;font-size:13px;color:var(--muted)}
   </style>
 </head>
@@ -68,10 +79,10 @@
           <p>Lily’s vader ondergaat nierdialyse en wacht op een niertransplantatie. Ondanks tussenkomst van de ziekenkas blijven er veel kosten over. Daarom zet klas <strong>4A-ZWA</strong> een warme inzamelactie op met heerlijke wafels en dampende chocomelk.</p>
 
           <div class="event-info">
-            <h3>📅 Praktische info</h3>
-            <p><strong>Datum:</strong> vrijdag 20 september 2025</p>
-            <p><strong>Locatie:</strong> speelplaats KOGEKA campus X</p>
-            <p><strong>Prijs:</strong> €2 per wafel, €1,50 per beker chocomelk</p>
+            <h3>Praktische info</h3>
+            <p><strong>Datum:</strong> Datum 2025/2026</p>
+            <p><strong>Locatie:</strong> speelplaats Sint Maria Keuken A-block</p>
+            <p><strong>Prijs:</strong> €1,50 per wafel, €2 per beker chocomelk</p>
           </div>
 
           <h3>Hoe verloopt de actie?</h3>
@@ -86,10 +97,44 @@
           </ul>
 
           <div class="cta-buttons">
-            <a href="#" class="btn">Bestel vooraf</a>
-            <a href="#" class="btn">Doe een gift</a>
-            <a href="mailto:tristan.vansonhoven@leerling.kogeka.be" class="btn">Contacteer ons</a>
+            <a href="#bestel" class="btn">Bestel vooraf</a>
           </div>
+        </div>
+
+        <div class="card" id="bestel">
+          <h2>Bestelformulier</h2>
+          <form action="https://formspree.io/f/xrbajbag" method="POST" class="order-form">
+            <label for="naam">Naam:</label>
+            <input type="text" id="naam" name="Naam" required>
+
+            <label for="klas">Klas:</label>
+            <input type="text" id="klas" name="Klas" required>
+
+            <label for="bestelling">Wat bestellen:</label>
+            <select id="bestelling" name="Bestelling" required>
+              <option value="Chocomelk">Chocomelk</option>
+              <option value="Wafel">Wafel</option>
+              <option value="Chocomelk en Wafel">Chocomelk en Wafel</option>
+            </select>
+
+            <label><input type="checkbox" name="Slagroom" value="ja"> Slagroom (+€0,50)</label>
+
+            <label for="aantal">Hoeveelheid:</label>
+            <select id="aantal" name="Aantal" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+
+            <button type="submit">Verstuur bestelling</button>
+          </form>
         </div>
       </main>
 
