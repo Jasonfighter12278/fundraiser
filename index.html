@@ -48,7 +48,7 @@
             <h3>Praktische info</h3>
             <p><strong>Datum:</strong> Schooljaar 2025/2026</p>
             <p><strong>Locatie:</strong> Speelplaats Sint Maria Keuken A-block</p>
-            <p><strong>Prijs:</strong> €0,00 per wafel, €0,00 per beker chocomelk, +€0,00 voor slagroom</p>
+            <p><strong>Prijs:</strong> €0,00 per wafel, €0,00 per beker chocomelk, +€0,00 voor slagroom (je kan op de speelplaats betalen met cash of bankkaart)</p>
           </div>
           <button class="btn" id="openForm">Bestel vooraf</button>
         </section>
@@ -107,10 +107,10 @@
 
     function berekenTotaal(){
       let prijs=0;
-      if(bestelling.value==="Chocomelk") prijs=2;
-      if(bestelling.value==="Wafel") prijs=1.5;
-      if(bestelling.value==="Chocomelk en Wafel") prijs=3.5;
-      if(slagroom.checked) prijs+=0.5;
+      if(bestelling.value==="Chocomelk") prijs=0;
+      if(bestelling.value==="Wafel") prijs=0;
+      if(bestelling.value==="Chocomelk en Wafel") prijs=0;
+      if(slagroom.checked) prijs+=0;
       const totaalPrijs=prijs*parseInt(aantal.value);
       totaal.textContent="Totaal: €"+totaalPrijs.toFixed(2).replace(".",",");
     }
